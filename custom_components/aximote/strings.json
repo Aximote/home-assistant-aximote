@@ -1,0 +1,33 @@
+{
+  "title": "Aximote",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aximote",
+        "description": "Enter your personal access token from the Aximote app.",
+        "data": {
+          "token": "Personal access token"
+        }
+      },
+      "reauth": {
+        "title": "Re-authenticate",
+        "description": "Enter a new PAT.",
+        "data": {
+          "token": "Personal access token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid or revoked token.",
+      "requires_pro": "Pro subscription required.",
+      "cannot_connect": "Could not connect.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "Already configured.",
+      "reauth_successful": "Updated.",
+      "wrong_account": "Wrong account.",
+      "unknown": "Not found."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aximote",
+        "description": "Enter your personal access token (PAT) from the Aximote app. The integration always uses the production Aximote API.",
+        "data": {
+          "token": "Personal access token"
+        }
+      },
+      "reauth": {
+        "title": "Aximote — re-authenticate",
+        "description": "Your token was rejected or no longer has access. Enter a new PAT.",
+        "data": {
+          "token": "Personal access token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid or revoked token.",
+      "requires_pro": "This account needs an active Pro subscription for the public API.",
+      "cannot_connect": "Could not reach the API or unexpected response.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Aximote account is already configured.",
+      "reauth_successful": "Credentials updated.",
+      "wrong_account": "That token belongs to a different user. Use the same account or remove the integration first.",
+      "unknown": "Configuration entry not found."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "on_trip": { "name": "On trip" },
+      "ignition_on": { "name": "Ignition" }
+    },
+    "device_tracker": {
+      "vehicle_location": { "name": "Location" }
+    },
+    "sensor": {
+      "fuel_level_pct": { "name": "Fuel level" },
+      "battery_level_pct": { "name": "Battery level" },
+      "range_km": { "name": "Range" },
+      "odometer_km": { "name": "Odometer" },
+      "speed_kmh": { "name": "Speed" },
+      "bearing_deg": { "name": "Bearing" },
+      "captured_at": { "name": "State captured at" },
+      "current_trip_id": { "name": "Current trip ID" },
+      "vehicle_make": { "name": "Make" },
+      "vehicle_model": { "name": "Model (profile)" },
+      "vehicle_year": { "name": "Year" },
+      "fuel_type": { "name": "Fuel type" },
+      "fuel_capacity_l": { "name": "Fuel capacity" },
+      "battery_capacity_kwh": { "name": "Battery capacity" },
+      "vehicle_updated_at": { "name": "Vehicle profile updated" },
+      "last_trip_distance_km": { "name": "Last trip distance" },
+      "last_trip_duration_sec": { "name": "Last trip duration" },
+      "last_trip_avg_speed_kmh": { "name": "Last trip average speed" },
+      "last_trip_fuel_l": { "name": "Last trip fuel" },
+      "last_trip_energy_kwh": { "name": "Last trip energy" },
+      "last_trip_co2_kg": { "name": "Last trip CO₂" },
+      "last_trip_eco_score": { "name": "Last trip eco score" },
+      "last_trip_speed_score": { "name": "Last trip speed score" },
+      "last_trip_consistency_score": { "name": "Last trip consistency score" },
+      "last_trip_started_at": { "name": "Last trip started" },
+      "last_trip_ended_at": { "name": "Last trip ended" },
+      "last_refuel_type": { "name": "Last refuel type" },
+      "last_refuel_amount_l": { "name": "Last refuel volume" },
+      "last_refuel_energy_kwh": { "name": "Last charge energy" },
+      "last_refuel_avg_kw": { "name": "Last charge average power" },
+      "last_refuel_cost": { "name": "Last refuel cost" },
+      "last_refuel_started_at": { "name": "Last refuel started" },
+      "last_refuel_ended_at": { "name": "Last refuel ended" },
+      "last_refuel_duration_sec": { "name": "Last refuel duration" },
+      "last_refuel_outside_temp_c": { "name": "Last refuel outside temperature" }
+    }
+  }
+}

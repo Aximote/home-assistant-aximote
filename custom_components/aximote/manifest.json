@@ -1,0 +1,12 @@
+{
+  "domain": "aximote",
+  "name": "Aximote",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Aximote/home-assistant-aximote",
+  "issue_tracker": "https://github.com/Aximote/home-assistant-aximote/issues",
+  "codeowners": ["@phellmayr"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "integration_type": "service",
+  "requirements": []
+}
